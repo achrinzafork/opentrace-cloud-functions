@@ -1,8 +1,8 @@
 interface HeartBeatEvent {
-  timestamp: number,
-  msg?: string,
+  timestamp: number;
+  msg?: string;
   // enhanced fields:
-  timestampString?: string,
+  timestampString?: string;
 }
 
 export default HeartBeatEvent;

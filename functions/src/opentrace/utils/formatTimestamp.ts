@@ -8,7 +8,7 @@ import config from "../../config";
 
 const TIMESTAMP_FORMAT = "DD-MMM-YYYY HH:mm:ss Z";
 
-function formatTimestamp(timestamp: number) {
+function formatTimestamp(timestamp: number): string {
   return moment.unix(timestamp).utcOffset(config.utcOffset).format(TIMESTAMP_FORMAT);
 }
 
